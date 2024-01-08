@@ -16,7 +16,7 @@ namespace OkulAppSube1BIL
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmOgrKayit());
+            Application.Run(new FrmOgretmenKayit());
         }
     }
 }

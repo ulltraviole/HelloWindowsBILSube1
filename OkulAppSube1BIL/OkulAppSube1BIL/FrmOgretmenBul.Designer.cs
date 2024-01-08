@@ -1,6 +1,6 @@
 ﻿namespace OkulAppSube1BIL
 {
-    partial class frmOgrBul
+    partial class FrmOgretmenBul
     {
         /// <summary>
         /// Required designer variable.
@@ -31,7 +31,7 @@
             this.grpBul = new System.Windows.Forms.GroupBox();
             this.btnBul = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtOgrNo = new System.Windows.Forms.TextBox();
+            this.txtOgretmenTCKN = new System.Windows.Forms.TextBox();
             this.grpBul.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -39,13 +39,13 @@
             // 
             this.grpBul.Controls.Add(this.btnBul);
             this.grpBul.Controls.Add(this.label1);
-            this.grpBul.Controls.Add(this.txtOgrNo);
-            this.grpBul.Location = new System.Drawing.Point(12, 12);
+            this.grpBul.Controls.Add(this.txtOgretmenTCKN);
+            this.grpBul.Location = new System.Drawing.Point(13, 12);
             this.grpBul.Name = "grpBul";
             this.grpBul.Size = new System.Drawing.Size(268, 176);
-            this.grpBul.TabIndex = 0;
+            this.grpBul.TabIndex = 1;
             this.grpBul.TabStop = false;
-            this.grpBul.Text = "Öğrenci Bul";
+            this.grpBul.Text = "Öğretmen Bul";
             // 
             // btnBul
             // 
@@ -62,25 +62,25 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(76, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 13);
+            this.label1.Size = new System.Drawing.Size(36, 13);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Öğrenci Numarası";
+            this.label1.Text = "TCKN";
             // 
-            // txtOgrNo
+            // txtOgretmenTCKN
             // 
-            this.txtOgrNo.Location = new System.Drawing.Point(79, 68);
-            this.txtOgrNo.Name = "txtOgrNo";
-            this.txtOgrNo.Size = new System.Drawing.Size(100, 20);
-            this.txtOgrNo.TabIndex = 0;
+            this.txtOgretmenTCKN.Location = new System.Drawing.Point(79, 68);
+            this.txtOgretmenTCKN.Name = "txtOgretmenTCKN";
+            this.txtOgretmenTCKN.Size = new System.Drawing.Size(100, 20);
+            this.txtOgretmenTCKN.TabIndex = 0;
             // 
-            // frmOgrBul
+            // FrmOgretmenBul
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(295, 201);
             this.Controls.Add(this.grpBul);
-            this.Name = "frmOgrBul";
-            this.Text = "frmOgrBul";
+            this.Name = "FrmOgretmenBul";
+            this.Text = "FrmOgretmenBul";
             this.grpBul.ResumeLayout(false);
             this.grpBul.PerformLayout();
             this.ResumeLayout(false);
@@ -92,6 +92,6 @@
         private System.Windows.Forms.GroupBox grpBul;
         private System.Windows.Forms.Button btnBul;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtOgrNo;
+        private System.Windows.Forms.TextBox txtOgretmenTCKN;
     }
 }

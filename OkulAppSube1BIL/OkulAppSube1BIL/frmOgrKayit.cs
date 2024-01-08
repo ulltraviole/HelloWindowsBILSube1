@@ -56,25 +56,44 @@ namespace OkulAppSube1BIL
 
         private void btnGuncelle_Click(object sender, EventArgs e)
         {
-            var obl = new OgrenciBL();
-            obl.OgrenciGuncelle(new Ogrenci { Ad = txtAd.Text.Trim(), Soyad = txtSoyad.Text.Trim(), Numara = txtNumara.Text.Trim(), Ogrenciid = Ogrenciid });
+            try
+            {
+                var obl = new OgrenciBL();
+                bool sonuc = obl.OgrenciGuncelle(new Ogrenci { Ad = txtAd.Text.Trim(), Soyad = txtSoyad.Text.Trim(), Numara = txtNumara.Text.Trim(), Ogrenciid = Ogrenciid });
+                MessageBox.Show(sonuc ? "Güncelleme başarılı." : "Güncelleme başarısız.");
+                if (sonuc) { btnGuncelle.Enabled = false; }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
 
         private void btnSil_Click(object sender, EventArgs e)
         {
-            var obl = new OgrenciBL();
-            obl.OgrenciSil(Ogrenciid);
+            try
+            {
+                var obl = new OgrenciBL();
+                bool sonuc = obl.OgrenciSil(Ogrenciid);
+                MessageBox.Show(sonuc ? "Silme başarılı." : "Silme başarısız.");
+                if (sonuc) { btnSil.Enabled = false; }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message.ToString());
+            }
         }
     }
 
-    //Güncelleme Başarılı mesajı
-    //Güncelleme butonu aktifliği?
-    //Silme butonu aktifliği
-    //Silme işlemi mesajı
-    //Tüm işlemlerde try-catch
-    //Helperda bulunan connection ve commandlerin dispose edilmesi (IDisposable Pattern)
-    //Singleton Pattern (Sürkeli nesne oluşmadan tek nesne üstünden işlemlerin yapılması)
-    //Öğretmen entity'si için kalan CRUD işlemleri
+    //Güncelleme Başarılı mesajı                                                                TAMAMLANDI.
+    //Güncelleme butonu aktifliği?                                                              TAMAMLANDI.
+    //Silme butonu aktifliği                                                                    TAMAMLANDI.
+    //Silme işlemi mesajı                                                                       TAMAMLANDI.
+    //Tüm işlemlerde try-catch                                                                  TAMAMLANDI.
+    //Helperda bulunan connection ve commandlerin dispose edilmesi (IDisposable Pattern         TAMAMLANDI.
+    //Singleton Pattern (Sürekli nesne oluşmadan tek nesne üstünden işlemlerin yapılması)       TAMAMLANDI.
+    //Öğretmen entity'si için kalan CRUD işlemleri                                              TAMAMLANDI.
 
 
 

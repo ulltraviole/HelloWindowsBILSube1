@@ -59,6 +59,18 @@
     <Compile Include="frmOgrBul.Designer.cs">
       <DependentUpon>frmOgrBul.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmOgretmenBul.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgretmenBul.Designer.cs">
+      <DependentUpon>FrmOgretmenBul.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOgretmenKayit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOgretmenKayit.Designer.cs">
+      <DependentUpon>FrmOgretmenKayit.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmOgrKayit.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +81,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmOgrBul.resx">
       <DependentUpon>frmOgrBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgretmenBul.resx">
+      <DependentUpon>FrmOgretmenBul.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOgretmenKayit.resx">
+      <DependentUpon>FrmOgretmenKayit.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmOgrKayit.resx">
       <DependentUpon>frmOgrKayit.cs</DependentUpon>
