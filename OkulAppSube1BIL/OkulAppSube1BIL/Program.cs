@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace HelloWindowsBILSube1
+namespace OkulAppSube1BIL
 {
     internal static class Program
     {
@@ -16,7 +16,7 @@ namespace HelloWindowsBILSube1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmGiris());
+            Application.Run(new frmOgrKayit());
         }
     }
 }

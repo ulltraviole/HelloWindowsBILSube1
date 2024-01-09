@@ -52,19 +52,15 @@ namespace DAL
         {
             try
             {
-                using (cn = new SqlConnection(cstr))
+                cn = new SqlConnection(cstr);
+                cmd = new SqlCommand(cmdtext, cn);
+                if (p != null)
                 {
-                    using (cmd = new SqlCommand(cmdtext, cn))
-                    {
-
-                        if (p != null)
-                        {
-                            cmd.Parameters.AddRange(p);
-                        }
-                        cn.Open();
-                        return cmd.ExecuteReader(CommandBehavior.CloseConnection);
-                    }
+                    cmd.Parameters.AddRange(p);
                 }
+                cn.Open();
+                return cmd.ExecuteReader(CommandBehavior.CloseConnection);
+
             }
             catch (Exception ex)
             {
@@ -75,4 +71,3 @@ namespace DAL
         }
     }
 }
-
